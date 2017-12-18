@@ -1,0 +1,25 @@
+{
+  "name": "chartjs",
+  "version": "1.0.0",
+  "description": "A ChartJS tutorial from Scott Tolinski at Level Up Toturials. ",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonleichty/ChartJS.git"
+  },
+  "author": "Brandon Leichty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonleichty/ChartJS/issues"
+  },
+  "homepage": "https://github.com/brandonleichty/ChartJS#readme",
+  "dependencies": {
+    "chart.js": "^2.7.1"
+  }
+}
