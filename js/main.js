@@ -4,27 +4,46 @@ const CHART = document.getElementById("lineChart");
 let lineChart = new Chart(CHART, {
     type: 'line',
     data: {
-        labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        labels: ["Game 1", "Game 2", "Game 3", "Game 4", "Game 5", "Game 6", "Game 7", "Game 8", "Game 9", "Game 10", "Game 11", "Game 12", "Game 13", "Game 14", "Game 15", "Game 16"],
         datasets: [
             {
-                label: "Prime and Fibonacci",
-                fillColor: "rgba(220,220,220,0.2)",
-                strokeColor: "rgba(220,220,220,1)",
-                pointColor: "rgba(220,220,220,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(220,220,220,1)",
-                data: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
-            },
-            {
-                label: "My Second dataset",
-                fillColor: "rgba(151,187,205,0.2)",
-                strokeColor: "rgba(151,187,205,1)",
-                pointColor: "rgba(151,187,205,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(151,187,205,1)",
-                data: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+                label: "Vikings Points Scored 2016",
+                fill: false,
+                lineTension: 0.1,
+                backgroundColor: "rgba(75, 192, 192, 0.4)",
+                borderColor: "rgba(75, 192, 192, 1)",
+                borderCapStyle: 'butt',
+                borderDash: [],
+                borderDashOffset: 0.0,
+                borderJoinStyle: 'miter',
+                pointBorderColor: "rgba(75,192,192,1)",
+                pointBackgroundColor: "#FFF", 
+                pointBorderWidth: 1, 
+                pointHoverRadious: 5, 
+                pointHoverBackgroundColor: "rgba(75,192,192,1)",
+                pointHoverBorderWidth: 2,
+                pointRadius: 1,
+                pointHitRadius: 10, 
+                data: [25, 17, 22, 24, 31, 10, 10, 16, 20, 30, 13, 15, 25, 6, 25, 38]
+            }, {
+                label: "Vikings Points Scored 2017",
+                fill: false,
+                lineTension: 0.1,
+                backgroundColor: "rgba(75, 192, 192, 0.4)",
+                borderColor: "rgba(75, 192, 192, 1)",
+                borderCapStyle: 'butt',
+                borderDash: [],
+                borderDashOffset: 0.0,
+                borderJoinStyle: 'miter',
+                pointBorderColor: "rgba(75,192,192,1)",
+                pointBackgroundColor: "#FFF", 
+                pointBorderWidth: 1, 
+                pointHoverRadious: 5, 
+                pointHoverBackgroundColor: "rgba(75,192,192,1)",
+                pointHoverBorderWidth: 2,
+                pointRadius: 1,
+                pointHitRadius: 10, 
+                data: [29, 9, 34, 7, 20, 23, 24, 33, 38, 24, 30, 14, 24, 34]
             }
         ]
     }
