@@ -1,6 +1,8 @@
 
 const CHART = document.getElementById("lineChart");
 
+Chart.defaults.global.responsive = true;
+
 let lineChart = new Chart(CHART, {
     type: 'line',
     data: {
@@ -9,6 +11,7 @@ let lineChart = new Chart(CHART, {
             {
                 label: "Vikings Points Scored 2016",
                 fill: true,
+                xAxisID: 0,
                 lineTension: 0.1,
                 backgroundColor: "rgba(75,75,192,0.4)",
                 borderColor: "rgba(75,72,192,1)",
@@ -48,5 +51,14 @@ let lineChart = new Chart(CHART, {
                 data: [29, 9, 34, 7, 20, 23, 24, 33, 38, 24, 30, 14, 24, 34]
             }
         ]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
     }
 });
